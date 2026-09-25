@@ -32,6 +32,18 @@ A Power BI dashboard analyzing global tech layoffs (2020–present) — cleaning
 
 ---
 
+## Setup / Refresh Instructions
+- This project reads cleaned data from `data/layoffs_cleaned.xlsx` via Power Query.
+- The Power BI file's Source step uses an absolute local file path, which will not work on a different machine.
+- To refresh the data yourself:
+  - Clone/download this repo
+  - Open `Global_Tech_Layoff_Trend.pbix` in Power BI Desktop
+  - Go to Transform Data → Data Source Settings
+  - Update the path to point to your local copy of `data-and-dashboard/layoffs_cleaned.xlsx`
+  - Click Refresh
+
+---
+
 ## Screenshots
 
 ![Overview](./screenshots/Overview.png)
